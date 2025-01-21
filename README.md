@@ -43,11 +43,14 @@ import (
 
 func main() {
   fmt.Println("Worker started")
-  for {
-    // Simulate processing a task
-    fmt.Println("Processing task")
-    time.Sleep(2 * time.Second)
-  }
+  ...
+  jobs := make(chan int, numJobs)
+	results := make(chan int, numWorkers)
+
+	for w := 1; w <= int(numWorkers); w++ {
+		go worker(w, jobs, results)
+	}
+  ...
 }
 ```
 
