@@ -44,11 +44,12 @@ import (
 func main() {
   fmt.Println("Worker started")
   ...
+  ...
+  ...
   jobs := make(chan int, numJobs)
-	results := make(chan int, numWorkers)
-
-	for w := 1; w <= int(numWorkers); w++ {
-		go worker(w, jobs, results)
+  results := make(chan int, numWorkers)
+  for w := 1; w <= int(numWorkers); w++ {
+      go worker(w, jobs, results)
 	}
   ...
 }
