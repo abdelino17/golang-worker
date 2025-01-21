@@ -16,9 +16,9 @@ The Golang worker application is designed to perform background tasks. It simula
 
 Clone the repository:
 
-```sh
-git clone https://github.com/abdelino17/golang-worker.git
-cd golang-worker
+```bash
+$ git clone https://github.com/abdelino17/golang-worker.git
+$ cd golang-worker
 ```
 
 ### Running the Application
