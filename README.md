@@ -4,7 +4,7 @@ This repository contains a sample Golang worker application.
 
 ## Overview
 
-The Golang worker application is designed to perform background tasks. It simulates processing multiple jobs concurrently use channels and goroutines.
+The Golang worker application is designed to perform background tasks. It simulates the processing of multiple jobs concurrently using channels and goroutines.
 
 ## Getting Started
 
